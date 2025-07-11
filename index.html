@@ -3,57 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Processing and Analysis Pipeline</title>
+    <title>Image Search by Query Pipeline</title>
     <style>
         :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --light: #ecf0f1;
-            --dark: #1a252f;
-            --success: #2ecc71;
+            --primary: #4285F4;
+            --secondary: #34A853;
+            --accent: #EA4335;
+            --light: #F8F9FA;
+            --dark: #202124;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--dark);
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: var(--light);
         }
         header {
-            background-color: var(--primary);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
             border-radius: 8px;
             margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         h1 {
             margin: 0;
             font-size: 2.5rem;
+            font-weight: 500;
         }
         h2 {
             color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 8px;
             margin-top: 30px;
+            font-weight: 500;
         }
         .section {
             background: white;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             margin-bottom: 25px;
         }
         .tech-badge {
             display: inline-block;
             background-color: var(--secondary);
             color: white;
-            padding: 5px 10px;
+            padding: 6px 12px;
             border-radius: 20px;
             font-size: 0.9rem;
             margin: 5px 5px 5px 0;
+            font-weight: 500;
+        }
+        .tech-group {
+            margin: 15px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
         footer {
             text-align: center;
@@ -71,24 +84,24 @@
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Image Processing and Analysis Pipeline</h1>
+        <h1>Image Search by Query Pipeline</h1>
     </header>
 
     <div class="section">
         <h2>Описание проекта</h2>
-        <p>Проект представляет собой автоматизированный пайплайн для обработки и анализа изображений. Реализованы функции загрузки изображений, их предварительной обработки, визуализации и выполнения базового анализа с использованием методов компьютерного зрения.</p>
+        <p>Проект представляет собой разработку демонстрационной версии поиска изображений по запросу. Реализованы функции загрузки изображений, их предварительной обработки, визуализации и выполнения базового анализа с использованием методов компьютерного зрения.</p>
     </div>
 
     <div class="section">
         <h2>Цели работы</h2>
         <ul>
             <li>Разработка скрипта для автоматической загрузки и обработки изображений</li>
-            <li>Реализация пайплайна предварительной обработки изображений</li>
-            <li>Создание инструментов для визуального анализа изображений</li>
-            <li>Демонстрация применения базовых методов компьютерного зрения</li>
+            <li>Реализация предварительной обработки изображений</li>
+            <li>Применение методов компьютерного зрения</li>
         </ul>
     </div>
 
@@ -104,20 +117,24 @@
 
     <div class="section">
         <h2>Используемые инструменты</h2>
-        <div>
+        <div class="tech-group">
             <span class="tech-badge">Python 3</span>
-            <span class="tech-badge">OpenCV</span>
+            <span class="tech-badge">Jupyter Notebook</span>
+        </div>
+        <div class="tech-group">
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">Keras</span>
             <span class="tech-badge">Matplotlib</span>
-            <span class="tech-badge">Seaborn</span>
             <span class="tech-badge">NumPy</span>
             <span class="tech-badge">Pandas</span>
-            <span class="tech-badge">Requests</span>
-            <span class="tech-badge">Jupyter Notebook</span>
+            <span class="tech-badge">Scikit-learn</span>
+            <span class="tech-badge">Transformers</span>
+            <span class="tech-badge">NLTK</span>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 Image Processing Project. Все права защищены.</p>
+        <p>© 2023 Image Search by Query Project. Все права защищены.</p>
     </footer>
 </body>
 </html>
